@@ -40,6 +40,19 @@ unzip hcxtools.zip
 cd hcxtools
 cp ./* /usr/bin/
 chmod ug+x /usr/bin/hcxpcapngtool
+
+#Ensure /usr/bin is in $PATH
+
+echo $PATH
+
+#If /usr/bin is not included in the output, add it: 
+
+export PATH=$PATH:/usr/bin
+
+#additionally: 
+cd /usr/bin
+sudo apt update
+sudo apt install hcxtools
 ```
 
 - [X] Create a new Discord server and set up a new [web hook](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks).
@@ -70,7 +83,7 @@ To check out how to make plugins for Pwnagotchi check the docs [here](https://pw
 
 You can contact me by sending my Pwnagotchi some PwnMail at:
 
-`e541dfdb7e835d0737189a119493843775fe0d070877b09eb895b122906d2f3a`
+`d079ef00b7d0b96fa73eab6eb86bcf860e3328a41a0a2b2be41edaabdb3208c3`
 
 
 ### >: To Do:
